@@ -1,4 +1,4 @@
-module github.com/greenpau/caddy-security
+module github.com/tekker-dev/caddy-security
 
 go 1.20
 
