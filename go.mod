@@ -7,9 +7,11 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/google/uuid v1.4.0
 	github.com/greenpau/caddy-trace v1.1.13
-	github.com/tekker-dev/go-authcrunch
+	github.com/tekker-dev/go-authcrunch v1.0.47
 	go.uber.org/zap v1.26.0
 )
+
+replace github.com/greenpau/go-authcrunch v1.0.47 => /home/tekker/caddy-local/caddy-security-mods/go-authcrunch
 
 require (
 	filippo.io/edwards25519 v1.0.0 // indirect
