@@ -1,5 +1,5 @@
-* <a href="https://caddyserver.com/api/download?os=windows&arch=amd64&p=github.com%2Fgreenpau%2Fcaddy-security%40v1.1.23&p=github.com%2Fgreenpau%2Fcaddy-trace%40v1.1.8" target="_blank">windows/amd64</a>
-* <a href="https://caddyserver.com/api/download?os=linux&arch=amd64&p=github.com%2Fgreenpau%2Fcaddy-security%40v1.1.23&p=github.com%2Fgreenpau%2Fcaddy-trace%40v1.1.8" target="_blank">linux/amd64</a>
+* <a href="https://caddyserver.com/api/download?os=windows&arch=amd64&p=github.com%2Fgreenpau%2Fcaddy-security%40v1.1.27&p=github.com%2Fgreenpau%2Fcaddy-trace%40v1.1.8" target="_blank">windows/amd64</a>
+* <a href="https://caddyserver.com/api/download?os=linux&arch=amd64&p=github.com%2Fgreenpau%2Fcaddy-security%40v1.1.27&p=github.com%2Fgreenpau%2Fcaddy-trace%40v1.1.8" target="_blank">linux/amd64</a>
 # caddy-security
 
 <a href="https://github.com/greenpau/caddy-security/actions/" target="_blank"><img src="https://github.com/greenpau/caddy-security/workflows/build/badge.svg?branch=main"></a>
@@ -18,10 +18,10 @@ Please consider **sponsoring this project** via Github Sponsors!
 
 Please ask questions either here or via LinkedIn. I am happy to help you! @greenpau
 
-**Documentation**: [authp.github.io](https://authp.github.io)
+**Documentation**: [docs.authcrunch.com](https://docs.authcrunch.com)
 
-**Docker Container**: [authp/authp](https://github.com/authp/authp/pkgs/container/authp)
+**Docker Container**: [authcrunch/authcrunch](https://github.com/authcrunch/authcrunch/pkgs/container/authcrunch)
 
-**Configuration Examples**: [here](https://github.com/authp/authp.github.io/tree/main/assets/conf)
+**Configuration Examples**: [here](https://github.com/authcrunch/authcrunch.github.io/tree/main/assets/conf)
 
 **Security Policy**: [SECURITY.md](SECURITY.md)
