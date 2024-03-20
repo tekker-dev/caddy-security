@@ -4,8 +4,6 @@ go 1.21
 
 toolchain go1.21.5
 
-replace github.com/greenpau/caddy-security v1.1.27 => github.com/tekker-dev/caddy-security v1.99.3
-
 replace github.com/greenpau/go-authcrunch v1.0.50 => github.com/tekker-dev/go-authcrunch v1.99.1
 
 require (
