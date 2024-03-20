@@ -3,7 +3,7 @@ module github.com/tekker-dev/caddy-security
 go 1.20
 
 require (
-	github.com/caddyserver/caddy/v2 latest
+	github.com/caddyserver/caddy/v2 v2.7.6-0.20240318040725-a9768d2fdefe
 	github.com/google/go-cmp v0.6.0
 	github.com/google/uuid v1.6.0
 	github.com/greenpau/caddy-security v1.1.27
