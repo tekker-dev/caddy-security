@@ -32,7 +32,7 @@ devbuild:
 	@rm -rf ../xcaddy-$(PLUGIN_NAME)/*
 	@mkdir -p ../xcaddy-$(PLUGIN_NAME) && cd ../xcaddy-$(PLUGIN_NAME) && \
 		xcaddy build $(CADDY_VERSION) --output ../$(PLUGIN_NAME)/bin/authcrunch \
-		--with github.com/greenpau/caddy-security@$(LATEST_GIT_COMMIT)=$(BUILD_DIR) \
+		--with github.com/tekker-dev/caddy-security@$(LATEST_GIT_COMMIT)=$(BUILD_DIR) \
 		--with github.com/greenpau/caddy-trace@latest \
 		--with github.com/greenpau/go-authcrunch@v1.0.50=/home/greenpau/dev/go/src/github.com/greenpau/go-authcrunch
 	@go build -v -o ./bin/authcrunch cmd/authcrunch/main.go;
