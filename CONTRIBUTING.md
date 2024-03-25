@@ -37,7 +37,7 @@ cd ~/tmpdev
 Second, fork the following repositories in Github into to your own Github
 handle, e.g. `anonymous`:
 
-* `https://github.com/tekker-dev/caddy-security` => `https://github.com/anonymous/caddy-security`
+* `https://github.com/greenpau/caddy-security` => `https://github.com/anonymous/caddy-security`
 * `https://github.com/greenpau/go-authcrunch` => `https://github.com/anonymous/go-authcrunch`
 
 Provided you are in `tmpdev` directory, clone the forked repositories:
@@ -55,28 +55,28 @@ cd caddy-security
 make dep
 ```
 
-Next, modify `go.mod` in `github.com/tekker-dev/caddy-security`. Include
+Next, modify `go.mod` in `github.com/greenpau/caddy-security`. Include
 `replace` directives to instruct `go` using local directories, as opposed
 to follow Github versions.
 
 Note: the referenced versions must match.
 
 ```
-module github.com/tekker-dev/caddy-security
+module github.com/greenpau/caddy-security
 
-go 1.16
+go 1.21
 
 require (
-    github.com/greenpau/go-authcrunch v1.0.50
+    github.com/greenpau/go-authcrunch v1.1.2
 )
 
-replace github.com/greenpau/go-authcrunch v1.0.50 => /home/greenpau/dev/go/src/github.com/greenpau/go-authcrunch
+replace github.com/greenpau/go-authcrunch v1.1.2 => /home/greenpau/dev/go/src/github.com/greenpau/go-authcrunch
 ```
 
 Alternatively:
 
 ```bash
-go mod edit -replace github.com/greenpau/go-authcrunch@v1.0.50=/home/greenpau/dev/go/src/github.com/greenpau/go-authcrunch@v1.0.48
+go mod edit -replace github.com/greenpau/go-authcrunch@v1.1.2=/home/greenpau/dev/go/src/github.com/greenpau/go-authcrunch@v1.0.48
 ```
 
 Then, modify `Makefile` such that that replacement passes to `xcaddy` builder:
@@ -84,8 +84,8 @@ Then, modify `Makefile` such that that replacement passes to `xcaddy` builder:
 ```bash
         @mkdir -p ../xcaddy-$(PLUGIN_NAME) && cd ../xcaddy-$(PLUGIN_NAME) && \
                 xcaddy build $(CADDY_VERSION) --output ../$(PLUGIN_NAME)/bin/caddy \
-                --with github.com/tekker-dev/caddy-security@$(LATEST_GIT_COMMIT)=$(BUILD_DIR) \
-                --with github.com/greenpau/go-authcrunch@v1.0.50=/home/greenpau/dev/go/src/github.com/greenpau/go-authcrunch
+                --with github.com/greenpau/caddy-security@$(LATEST_GIT_COMMIT)=$(BUILD_DIR) \
+                --with github.com/greenpau/go-authcrunch@v1.1.2=/home/greenpau/dev/go/src/github.com/greenpau/go-authcrunch
 ```
 
 Once all the necessary packages are installed, you should be ready to compile
@@ -110,3 +110,4 @@ Additionally, you should be able to run tests:
 ```bash
 make ctest
 ```
+
