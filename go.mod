@@ -1,8 +1,8 @@
-module github.com/greenpau/caddy-security
+module github.com/tekker-dev/caddy-security
 
 go 1.21
 
-replace github.com/greenpau/go-authcrunch v1.1.2 => github.com/tekker-dev/go-authcrunch v1.99.1
+replace github.com/greenpau/go-authcrunch v1.1.2 => github.com/tekker-dev/go-authcrunch v1.99.2
 
 require (
 	github.com/caddyserver/caddy/v2 v2.7.6
@@ -166,4 +166,3 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	howett.net/plist v1.0.1 // indirect
 )
-
